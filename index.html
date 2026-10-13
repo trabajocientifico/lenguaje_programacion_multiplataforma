@@ -199,7 +199,7 @@ h2{ font-size:clamp(28px,4vw,52px); font-weight:700; line-height:1.08; letter-sp
 .pf-edu-row .n{ grid-row:span 2; font-family:var(--font-mono); font-size:10.5px; color:var(--muted); padding-top:3px; }
 .pf-edu-row .lv{ font-size:9.5px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); }
 .pf-edu-row .dg{ font-size:12.5px; color:var(--text); line-height:1.3; }
-.pf-edu-row.phd .dg{ color:var(--accent); font-weight:700; }
+.pf-edu-row.hl .dg{ color:var(--accent); font-weight:700; }
 
 .pf-social{ margin-top:14px; padding:16px 16px 14px; border-radius:18px; background:var(--surface); border:1px solid var(--line); }
 .pf-soc-grid{ display:grid; grid-template-columns:1fr 1fr; gap:8px; }
@@ -239,9 +239,9 @@ h2{ font-size:clamp(28px,4vw,52px); font-weight:700; line-height:1.08; letter-sp
 .pf-inv{ margin-top:11px; padding-top:10px; border-top:1px solid var(--line); font-size:11.5px; line-height:1.45; color:var(--muted); }
 .pf-inv b{ color:var(--text); font-weight:700; }
 
-.pf-skills{ display:flex; flex-direction:column; gap:8px; margin-top:16px; }
-.pf-sk{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
-.pf-sk .c{ min-width:104px; font-size:9.5px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); }
+.pf-skills{ display:grid; grid-template-columns:1fr 1fr; gap:12px 14px; margin-top:16px; }
+.pf-sk{ display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+.pf-sk .c{ width:100%; font-size:9.5px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); }
 .pf-sk .s{ font-size:11.5px; font-weight:600; padding:5px 11px; border-radius:99px;
   background:rgba(255,255,255,.04); border:1px solid var(--line); color:var(--text); }
 
@@ -257,6 +257,7 @@ h2{ font-size:clamp(28px,4vw,52px); font-weight:700; line-height:1.08; letter-sp
   .pf-grid{ grid-template-columns:1fr; }
   .pf-frame{ max-width:240px; margin:0 auto; }
   .pf-cols{ grid-template-columns:1fr; }
+  .pf-skills{ grid-template-columns:1fr; }
   .pf-sk .c{ min-width:0; width:100%; }
 }
 
@@ -949,7 +950,7 @@ h2{ font-size:clamp(28px,4vw,52px); font-weight:700; line-height:1.08; letter-sp
 
 <div id="progress"></div>
 <div class="progress-num"><b id="curNum">1</b> / <span id="totNum">1</span></div>
-<div class="block-tag" id="blockTag">Presentación</div>
+<div class="block-tag" id="blockTag">Curso</div>
 
 <div class="topbar">
   <button class="menu-btn" id="menuBtn" aria-label="Índice de secciones">☰ Índice</button>
@@ -967,7 +968,7 @@ h2{ font-size:clamp(28px,4vw,52px); font-weight:700; line-height:1.08; letter-sp
 
 <div id="stage">
 
-<section class="slide hero active" data-block="Presentación" data-title="Portada" data-sub="Lenguaje de Programación Multiplataforma">
+<section class="slide hero active" data-block="Curso" data-title="Portada" data-sub="Lenguaje de Programación Multiplataforma">
   <div class="slide-scroll">
     <div class="hero-top">
       <svg class="orbit" viewBox="0 0 64 64" fill="none">
@@ -982,7 +983,6 @@ h2{ font-size:clamp(28px,4vw,52px); font-weight:700; line-height:1.08; letter-sp
       <h1>
         <span class="ln1">Lenguaje de Programación</span>
         <span class="ln2">Multi<span class="grad">plataforma</span></span>
-        <span class="ln3">De la idea al algoritmo</span>
       </h1>
     </div>
     <div class="hero-author">
@@ -1007,7 +1007,7 @@ h2{ font-size:clamp(28px,4vw,52px); font-weight:700; line-height:1.08; letter-sp
 </section>
 
 <!-- 02 · PERFIL DEL DOCENTE -->
-<section class="slide" data-block="Presentación" data-title="Quién dicta el curso" data-sub="Oscar Iván Vargas Pineda, PhD">
+<section class="slide" data-block="Curso" data-title="Quién dicta el curso" data-sub="Oscar Iván Vargas Pineda, PhD">
   <div class="slide-scroll pf">
     <div class="pf-grid">
 
@@ -1021,8 +1021,8 @@ h2{ font-size:clamp(28px,4vw,52px); font-weight:700; line-height:1.08; letter-sp
           <div class="pf-edu-row"><span class="n">01</span><span class="lv">Pregrado</span><span class="dg">Ingeniero Agroindustrial</span></div>
           <div class="pf-edu-row"><span class="n">02</span><span class="lv">Especialista</span><span class="dg">Gestión del Agua</span></div>
           <div class="pf-edu-row"><span class="n">03</span><span class="lv">Magíster</span><span class="dg">Gestión Ambiental Sostenible</span></div>
-          <div class="pf-edu-row"><span class="n">04</span><span class="lv">Magíster</span><span class="dg">Inteligencia Artificial Aplicada</span></div>
-          <div class="pf-edu-row phd"><span class="n">05</span><span class="lv">Doctor</span><span class="dg">Ciencias Agrarias</span></div>
+          <div class="pf-edu-row hl"><span class="n">04</span><span class="lv">Magíster <em class="pf-now">En curso</em></span><span class="dg">Inteligencia Artificial Aplicada</span></div>
+          <div class="pf-edu-row"><span class="n">05</span><span class="lv">Doctor</span><span class="dg">Ciencias Agrarias</span></div>
         </div>
 
         <div class="pf-social">
@@ -1065,18 +1065,21 @@ h2{ font-size:clamp(28px,4vw,52px); font-weight:700; line-height:1.08; letter-sp
           <div class="pf-box">
             <div class="pf-box-t">Docencia universitaria</div>
             <ul class="pf-list">
-              <li><b>Universidad de los Llanos</b><span>Ingeniería Agroindustrial</span></li>
-              <li><b>Universidad Santo Tomás</b><span>Ingeniería Industrial</span></li>
-              <li><b>Universidad Jorge Tadeo Lozano</b><span>Posgrado · Diseño y Creación con IA</span></li>
-              <li><b>Universidad Central</b><span>Pregrado y posgrado</span></li>
+              <li><b>Universidad de los Llanos</b></li>
+              <li><b>Universidad Santo Tomás</b></li>
+              <li><b>Universidad Jorge Tadeo Lozano</b></li>
+              <li><b>Universidad Central</b></li>
+              <li><b>Universidad Autónoma de Occidente</b></li>
+              <li><b>Universidad Pedagógica y Tecnológica de Colombia</b></li>
             </ul>
-            <div class="pf-inv">Invitado: <b>Politécnica de Madrid</b> (España) · <b>Montpellier</b> (Francia) · <b>El Bosque</b> (Colombia)</div>
+            <div class="pf-inv">Invitado: <b>Politécnica de Madrid</b> (España) · <b>Montpellier</b> (Francia)</div>
           </div>
 
           <div class="pf-box">
             <div class="pf-box-t">Consultoría en datos</div>
             <ul class="pf-list">
-              <li><b>Earth Innovation Institute</b><span>Científico de datos · IA aplicada a sostenibilidad <em class="pf-now">Actual</em></span></li>
+              <li><b>Universidad Nacional de Colombia · DNIA</b><span>Experto en IA para la investigación científica <em class="pf-now">Actual</em></span></li>
+              <li><b>Earth Innovation Institute</b><span>Científico de datos · IA aplicada a sostenibilidad</span></li>
               <li><b>Banco Mundial</b><span>Análisis de datos</span></li>
               <li><b>Banco Interamericano de Desarrollo</b><span>Análisis de datos</span></li>
               <li><b>ECOPETROL</b> · <b>Fundación ALISOS</b><span>Datos para industria y modelamiento</span></li>
@@ -1103,7 +1106,7 @@ h2{ font-size:clamp(28px,4vw,52px); font-weight:700; line-height:1.08; letter-sp
 </section>
 
 <!-- 03 · LAS TRES UNIDADES DEL CURSO -->
-<section class="slide" data-block="Presentación" data-title="La ruta" data-sub="Las tres unidades y sus temas">
+<section class="slide" data-block="Curso" data-title="La ruta" data-sub="Las tres unidades y sus temas">
   <div class="slide-scroll ruta">
     <div class="slide-head">
       <span class="eyebrow">Cómo vamos a avanzar</span>
@@ -1143,7 +1146,7 @@ h2{ font-size:clamp(28px,4vw,52px); font-weight:700; line-height:1.08; letter-sp
 </section>
 
 <!-- 04 · FORMULARIO: CONOCER EL CURSO -->
-<section class="slide" data-block="Presentación" data-title="Conocer el curso" data-sub="Formulario de entrada">
+<section class="slide" data-block="Curso" data-title="Conocer el curso" data-sub="Formulario de entrada">
   <div class="slide-scroll wrapA">
     <div class="slide-head">
       <span class="eyebrow">Antes de empezar</span>
