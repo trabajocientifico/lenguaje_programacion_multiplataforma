@@ -1810,7 +1810,7 @@ h2{ font-size:clamp(28px,4vw,52px); font-weight:700; line-height:1.08; letter-sp
       <h1 class="course-title mt-4 text-white">Fundamentos de <span style="color:var(--lime)">Python</span></h1>
       <p class="text-lg md:text-xl text-slate-300 mt-5 max-w-3xl leading-relaxed">
         Con las herramientas listas, empezamos a escribir. Cada tema trae un ejemplo que puedes
-        <span class="em">ejecutar aquí mismo</span>, y los más importantes terminan con un reto "manos al teclado".
+        <span class="em">ejecutar aquí mismo</span>.
       </p>
     </div>
     <div class="reveal grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -1832,7 +1832,6 @@ h2{ font-size:clamp(28px,4vw,52px); font-weight:700; line-height:1.08; letter-sp
       <div class="toc-card p-4 rounded-xl border border-slate-700 bg-slate-800/40"><span class="code-font text-xs" style="color:var(--lime)">16</span><p class="font-bold mt-1">Funciones</p><p class="text-xs text-slate-400">recetas guardadas</p></div>
       <div class="toc-card p-4 rounded-xl border border-slate-700 bg-slate-800/40"><span class="code-font text-xs" style="color:var(--lime)">17</span><p class="font-bold mt-1">Errores</p><p class="text-xs text-slate-400">try · except</p></div>
       <div class="toc-card p-4 rounded-xl border border-slate-700 bg-slate-800/40"><span class="code-font text-xs" style="color:var(--lime)">18</span><p class="font-bold mt-1">Librerías</p><p class="text-xs text-slate-400">las que ya escribió otro</p></div>
-      <div class="toc-card p-4 rounded-xl border border-slate-700 bg-slate-800/40" style="border-color:rgba(242,177,52,.4)"><span class="code-font text-xs" style="color:var(--amber)">6×</span><p class="font-bold mt-1">Retos</p><p class="text-xs text-slate-400">manos al teclado</p></div>
     </div>
     <div class="reveal mt-6 p-4 rounded-lg text-sm text-slate-300" style="background:rgba(31,93,76,.25);border-left:4px solid var(--lime)">
       <i class="fa-solid fa-lightbulb mr-2" style="color:var(--amber)"></i>
@@ -2343,45 +2342,6 @@ print("El año que viene tendrás", edad + 1)</textarea>
   </div>
 </section>
 
-<!-- 24 · RETO VARIABLES -->
-<section class="slide s-py" data-block="Datos y operaciones" data-title="Reto · Variables y tipos" data-sub="¡Manos al teclado!">
-  <div class="py-stage flex flex-col justify-center items-center text-center">
-    <div class="reveal mb-8 text-center">
-      <span class="kicker mb-3" style="color:var(--amber)">¡Manos al teclado!</span>
-      <h2 class="serif-h2 text-4xl md:text-5xl mt-3" style="color:var(--amber)">
-        <i class="fa-solid fa-laptop-code mr-2"></i>Reto: <span class="em" style="color:var(--lime)">Variables y Tipos</span>
-      </h2>
-    </div>
-    <div class="reto-card p-6 md:p-10 rounded-2xl max-w-3xl text-left w-full">
-      <p class="text-lg text-slate-300 mb-4">Utilizando el editor de abajo, escribe un programa que cumpla lo siguiente:</p>
-      <ol class="text-lg text-slate-200 space-y-3 list-decimal list-inside marker:text-yellow-400 marker:font-bold mb-6">
-        <li>Crea una variable llamada <strong>mi_nombre</strong> y asígnale tu nombre en texto (entre comillas).</li>
-        <li>Crea una variable llamada <strong>mi_edad</strong> y asígnale tu edad (en números, sin comillas).</li>
-        <li>Usa la función <code>print()</code> dos veces para imprimir ambas variables.</li>
-      </ol>
-      <div class="ide-window">
-        <div class="ide-header">
-          <div class="ide-dots"><div class="ide-dot red"></div><div class="ide-dot yellow"></div><div class="ide-dot green"></div></div>
-          <button class="run-btn" onclick="runCode('code-reto-vars','out-reto-vars')"><i class="fa-solid fa-play"></i> Ejecutar Mi Reto</button>
-        </div>
-        <textarea id="code-reto-vars" class="python-editor"># ¡Borra esto y escribe tu código aquí!
-
-
-</textarea>
-        <div id="out-reto-vars" class="console-output code-font text-sm"></div>
-      </div>
-      <div class="sol mt-4">
-        <button class="sol-btn" onclick="this.parentElement.classList.toggle('open')">Ver una solución posible</button>
-        <pre>mi_nombre = "Ana"
-mi_edad = 25
-
-print(mi_nombre)
-print(mi_edad)</pre>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- 24b · OPERADORES -->
 <section class="slide s-py" data-block="Datos y operaciones" data-title="08 · Operadores" data-sub="Calcular, comparar y decidir">
   <div class="py-stage flex flex-col">
@@ -2859,44 +2819,6 @@ print("Al revés:", notas)</textarea>
   </div>
 </section>
 
-<!-- 26 · RETO LISTAS -->
-<section class="slide s-py" data-block="Estructuras de datos" data-title="Reto · Listas" data-sub="¡Manos al teclado!">
-  <div class="py-stage flex flex-col justify-center items-center text-center">
-    <div class="reveal mb-8 text-center">
-      <span class="kicker mb-3" style="color:var(--amber)">¡Manos al teclado!</span>
-      <h2 class="serif-h2 text-4xl md:text-5xl mt-3" style="color:var(--amber)">
-        <i class="fa-solid fa-list-ul mr-2"></i>Reto: <span class="em" style="color:var(--lime)">Listas</span>
-      </h2>
-    </div>
-    <div class="reto-card p-6 md:p-10 rounded-2xl max-w-3xl text-left w-full">
-      <ol class="text-lg text-slate-200 space-y-3 list-decimal list-inside marker:text-yellow-400 marker:font-bold mb-5">
-        <li>Crea una lista llamada <strong>mis_colores</strong> con tres colores en texto.</li>
-        <li>Usa <code>.append()</code> para añadir un cuarto color.</li>
-        <li>Imprime la lista completa y luego solo el primer color.</li>
-      </ol>
-      <div class="ide-window">
-        <div class="ide-header">
-          <div class="ide-dots"><div class="ide-dot red"></div><div class="ide-dot yellow"></div><div class="ide-dot green"></div></div>
-          <button class="run-btn" onclick="runCode('code-reto-list','out-reto-list')"><i class="fa-solid fa-play"></i> Ejecutar Mi Reto</button>
-        </div>
-        <textarea id="code-reto-list" class="python-editor"># Escribe aquí tu código de listas
-
-
-</textarea>
-        <div id="out-reto-list" class="console-output code-font text-sm"></div>
-      </div>
-      <div class="sol mt-4">
-        <button class="sol-btn" onclick="this.parentElement.classList.toggle('open')">Ver una solución posible</button>
-        <pre>mis_colores = ["Rojo", "Azul", "Verde"]
-mis_colores.append("Amarillo")
-
-print(mis_colores)
-print(mis_colores[0])</pre>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- 27 · TUPLAS -->
 <section class="slide s-py" data-block="Estructuras de datos" data-title="11 · Tuplas" data-sub="Datos que no cambian">
   <div class="py-stage flex flex-col">
@@ -3246,49 +3168,6 @@ print(curso[1]["nombre"], "sacó", curso[1]["nota"])</textarea>
   </div>
 </section>
 
-<!-- 29 · RETO DICCIONARIOS -->
-<section class="slide s-py" data-block="Estructuras de datos" data-title="Reto · Diccionarios" data-sub="¡Manos al teclado!">
-  <div class="py-stage flex flex-col justify-center items-center text-center">
-    <div class="reveal mb-8 text-center">
-      <span class="kicker mb-3" style="color:var(--amber)">¡Manos al teclado!</span>
-      <h2 class="serif-h2 text-4xl md:text-5xl mt-3" style="color:var(--amber)">
-        <i class="fa-solid fa-book mr-2"></i>Reto: <span class="em" style="color:var(--lime)">Diccionarios</span>
-      </h2>
-    </div>
-    <div class="reto-card p-6 md:p-10 rounded-2xl max-w-3xl text-left w-full">
-      <ol class="text-lg text-slate-200 space-y-3 list-decimal list-inside marker:text-yellow-400 marker:font-bold mb-5">
-        <li>Crea un diccionario <strong>mi_perfil</strong> con las claves <code>"nombre"</code>, <code>"ciudad"</code> y <code>"edad"</code>.</li>
-        <li>Imprime solo tu ciudad usando la clave.</li>
-        <li>Añade la clave <code>"curso"</code> con el valor <code>"Programación Multiplataforma"</code> e imprime todo.</li>
-      </ol>
-      <div class="ide-window">
-        <div class="ide-header">
-          <div class="ide-dots"><div class="ide-dot red"></div><div class="ide-dot yellow"></div><div class="ide-dot green"></div></div>
-          <button class="run-btn" onclick="runCode('code-reto-dic','out-reto-dic')"><i class="fa-solid fa-play"></i> Ejecutar Mi Reto</button>
-        </div>
-        <textarea id="code-reto-dic" class="python-editor"># Crea aquí tu diccionario
-
-
-</textarea>
-        <div id="out-reto-dic" class="console-output code-font text-sm"></div>
-      </div>
-      <div class="sol mt-4">
-        <button class="sol-btn" onclick="this.parentElement.classList.toggle('open')">Ver una solución posible</button>
-        <pre>mi_perfil = {
-    "nombre": "Ana",
-    "ciudad": "Bogotá",
-    "edad": 25
-}
-
-print(mi_perfil["ciudad"])
-
-mi_perfil["curso"] = "Programación Multiplataforma"
-print(mi_perfil)</pre>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- 30 · CONJUNTOS -->
 <section class="slide s-py" data-block="Estructuras de datos" data-title="13 · Conjuntos" data-sub="Elementos únicos">
   <div class="py-stage flex flex-col">
@@ -3449,48 +3328,6 @@ if edad &lt; 13 or not tiene_boleto:
   </div>
 </section>
 
-<!-- 32 · RETO CONDICIONALES -->
-<section class="slide s-py" data-block="Control de flujo" data-title="Reto · Condicionales" data-sub="¡Manos al teclado!">
-  <div class="py-stage flex flex-col justify-center items-center text-center">
-    <div class="reveal mb-8 text-center">
-      <span class="kicker mb-3" style="color:var(--amber)">¡Manos al teclado!</span>
-      <h2 class="serif-h2 text-4xl md:text-5xl mt-3" style="color:var(--amber)">
-        <i class="fa-solid fa-code-branch mr-2"></i>Reto: <span class="em" style="color:var(--lime)">Condicionales</span>
-      </h2>
-    </div>
-    <div class="reto-card p-6 md:p-10 rounded-2xl max-w-3xl text-left w-full">
-      <ol class="text-lg text-slate-200 space-y-3 list-decimal list-inside marker:text-yellow-400 marker:font-bold mb-5">
-        <li>Crea una variable <strong>nota</strong> con un número entre 0 y 5.</li>
-        <li>Si la nota es mayor o igual a 3, imprime <code>"Aprobó"</code>. Si no, <code>"Debe repetir"</code>.</li>
-        <li>Extra: agrega un <code>elif</code> que imprima <code>"¡Excelente!"</code> cuando la nota sea 4.5 o más.</li>
-      </ol>
-      <div class="ide-window">
-        <div class="ide-header">
-          <div class="ide-dots"><div class="ide-dot red"></div><div class="ide-dot yellow"></div><div class="ide-dot green"></div></div>
-          <button class="run-btn" onclick="runCode('code-reto-cond','out-reto-cond')"><i class="fa-solid fa-play"></i> Ejecutar Mi Reto</button>
-        </div>
-        <textarea id="code-reto-cond" class="python-editor"># Escribe tu condicional aquí (if / elif / else).
-# ¡Recuerda la sangría de 4 espacios dentro de cada rama!
-
-
-</textarea>
-        <div id="out-reto-cond" class="console-output code-font text-sm"></div>
-      </div>
-      <div class="sol mt-4">
-        <button class="sol-btn" onclick="this.parentElement.classList.toggle('open')">Ver una solución posible</button>
-        <pre>nota = 4.6
-
-if nota >= 4.5:
-    print("¡Excelente!")
-elif nota >= 3:
-    print("Aprobó")
-else:
-    print("Debe repetir")</pre>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- 33 · BUCLES -->
 <section class="slide s-py" data-block="Control de flujo" data-title="15 · Bucles" data-sub="El trabajador incansable">
   <div class="py-stage flex flex-col">
@@ -3637,46 +3474,6 @@ print("Se acabaron los intentos")</textarea>
   </div>
 </section>
 
-<!-- 34 · RETO BUCLES -->
-<section class="slide s-py" data-block="Control de flujo" data-title="Reto · Bucles" data-sub="¡Manos al teclado!">
-  <div class="py-stage flex flex-col justify-center items-center text-center">
-    <div class="reveal mb-8 text-center">
-      <span class="kicker mb-3" style="color:var(--amber)">¡Manos al teclado!</span>
-      <h2 class="serif-h2 text-4xl md:text-5xl mt-3" style="color:var(--amber)">
-        <i class="fa-solid fa-rotate mr-2"></i>Reto: <span class="em" style="color:var(--lime)">Bucles</span>
-      </h2>
-    </div>
-    <div class="reto-card p-6 md:p-10 rounded-2xl max-w-3xl text-left w-full">
-      <ol class="text-lg text-slate-200 space-y-3 list-decimal list-inside marker:text-yellow-400 marker:font-bold mb-5">
-        <li>Crea una lista <strong>ciudades</strong> con tres ciudades.</li>
-        <li>Recórrela con un <code>for</code> e imprime cada una.</li>
-        <li>Extra: usa <code>range(1, 11)</code> para imprimir la tabla del 5.</li>
-      </ol>
-      <div class="ide-window">
-        <div class="ide-header">
-          <div class="ide-dots"><div class="ide-dot red"></div><div class="ide-dot yellow"></div><div class="ide-dot green"></div></div>
-          <button class="run-btn" onclick="runCode('code-reto-loop','out-reto-loop')"><i class="fa-solid fa-play"></i> Ejecutar Mi Reto</button>
-        </div>
-        <textarea id="code-reto-loop" class="python-editor"># Escribe tu bucle aquí
-
-
-</textarea>
-        <div id="out-reto-loop" class="console-output code-font text-sm"></div>
-      </div>
-      <div class="sol mt-4">
-        <button class="sol-btn" onclick="this.parentElement.classList.toggle('open')">Ver una solución posible</button>
-        <pre>ciudades = ["Bogotá", "Medellín", "Cali"]
-
-for ciudad in ciudades:
-    print(ciudad)
-
-for i in range(1, 11):
-    print(5 * i)</pre>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- 35 · FUNCIONES -->
 <!-- SEPARADORA · BLOQUE 5 -->
 <section class="slide s-py" data-block="Reutilizar y ampliar" data-title="Bloque 5 · Reutilizar y ampliar" data-sub="Funciones, errores y librerías">
@@ -3751,51 +3548,6 @@ print(calcular_area(12, 2))</textarea>
       <div class="p-3 bg-slate-800 border-l-4 rounded" style="border-color:var(--lime)">
         <p class="font-bold mb-1 text-sm" style="color:var(--lime)"><i class="fa-solid fa-robot mr-2"></i>Esto es lo que te va a devolver un agente</p>
         <p class="text-slate-300 text-xs leading-relaxed">Cuando le pidas "hazme una función que…", lo que recibirás tiene exactamente la forma del recuadro 1. Ahora ya sabrás leerlo.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 36 · RETO FUNCIONES -->
-<section class="slide s-py" data-block="Reutilizar y ampliar" data-title="Reto · Funciones" data-sub="El reto final del bloque">
-  <div class="py-stage flex flex-col justify-center items-center text-center">
-    <div class="reveal mb-8 text-center">
-      <span class="kicker mb-3" style="color:var(--amber)">¡Manos al teclado!</span>
-      <h2 class="serif-h2 text-4xl md:text-5xl mt-3" style="color:var(--amber)">
-        <i class="fa-solid fa-utensils mr-2"></i>Reto final: <span class="em" style="color:var(--lime)">Funciones</span>
-      </h2>
-    </div>
-    <div class="reto-card p-6 md:p-10 rounded-2xl max-w-3xl text-left w-full">
-      <ol class="text-lg text-slate-200 space-y-3 list-decimal list-inside marker:text-yellow-400 marker:font-bold mb-5">
-        <li>Define una función <strong>promedio</strong> que reciba una lista de notas.</li>
-        <li>Que devuelva (<code>return</code>) la suma dividida entre la cantidad de notas.</li>
-        <li>Llámala con <code>[3.5, 4.2, 2.8, 3.9]</code> e imprime el resultado.</li>
-        <li>Extra: usa un <code>if</code> para decir si el grupo aprobó (≥ 3.0).</li>
-      </ol>
-      <div class="ide-window">
-        <div class="ide-header">
-          <div class="ide-dots"><div class="ide-dot red"></div><div class="ide-dot yellow"></div><div class="ide-dot green"></div></div>
-          <button class="run-btn" onclick="runCode('code-reto-func','out-reto-func')"><i class="fa-solid fa-play"></i> Ejecutar Mi Reto</button>
-        </div>
-        <textarea id="code-reto-func" class="python-editor"># 1. Define tu función aquí
-
-
-# 2. Llámala e imprime el resultado
-</textarea>
-        <div id="out-reto-func" class="console-output code-font text-sm"></div>
-      </div>
-      <div class="sol mt-4">
-        <button class="sol-btn" onclick="this.parentElement.classList.toggle('open')">Ver una solución posible</button>
-        <pre>def promedio(notas):
-    return sum(notas) / len(notas)
-
-resultado = promedio([3.5, 4.2, 2.8, 3.9])
-print("Promedio:", resultado)
-
-if resultado >= 3.0:
-    print("El grupo aprobó")
-else:
-    print("El grupo no aprobó")</pre>
       </div>
     </div>
   </div>
@@ -4072,7 +3824,19 @@ print("Todo listo para empezar")</pre>
       <div class="p-4 rounded-xl border border-slate-700 bg-slate-800/40"><p class="font-bold" style="color:var(--clay)">Unidades 2 y 3</p><p class="text-sm text-slate-400 mt-1">machine learning y redes neuronales artificiales</p></div>
     </div>
     <div class="reveal p-4 rounded-lg text-sm text-slate-300 max-w-3xl mb-8" style="background:rgba(31,93,76,.25);border-left:4px solid var(--lime)">
-      <strong>Tarea para la próxima clase:</strong> pídele a tu agente que te explique, línea por línea, uno de los retos que resolviste hoy. Si algo de su explicación no te cuadra, tráelo a clase.
+      <strong>Tarea para la próxima clase:</strong> pídele a tu agente que te explique, línea por línea, uno de los ejemplos que ejecutaste hoy. Si algo de su explicación no te cuadra, tráelo a clase.
+    </div>
+    <div class="reveal bg-slate-800/50 p-8 rounded-3xl border border-slate-700 w-full max-w-2xl mb-8 shadow-xl">
+      <h3 class="text-white text-xl font-bold mb-4 flex items-center justify-center gap-2">
+        <i class="fa-solid fa-file-excel text-emerald-400"></i> Base de Datos para Trabajar
+      </h3>
+      <p class="text-slate-400 mb-6">
+        Descarga el archivo de Excel con los datos de producción simulados para practicar lo que viste hoy.
+      </p>
+      <a href="https://docs.google.com/spreadsheets/d/1hSgmbNROkhf4lUfAEMTRwXLHTu89INqW/edit?usp=sharing&ouid=101573209953602387656&rtpof=true&sd=true" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white text-lg font-bold rounded-xl transition-all shadow-lg shadow-emerald-600/30 hover:-translate-y-1" style="text-decoration:none">
+        <i class="fa-solid fa-cloud-arrow-down"></i>
+        Descargar Archivo Excel
+      </a>
     </div>
     <div class="reveal flex gap-4 flex-wrap justify-center">
       <button onclick="go(0)" class="px-6 py-3 rounded-full font-bold transition-all hover:scale-105"
